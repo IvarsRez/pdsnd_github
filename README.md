@@ -8,6 +8,7 @@ Bike Share Data
 
 ### Description
 Computing a variety of statistics about bicycle sharing in various cities.
+The cities are Chicago, New York City and Washington.
 
 ### Files used
 
