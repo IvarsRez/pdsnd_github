@@ -10,6 +10,7 @@ DAYS = ['Monday', 'Tuesday', 'Wednsday', 'Thusrday', 'Friday', 'Saturday', 'Sund
 
 
 def get_filters():
+
     """
     Asks user to specify a city, month, and day to analyze.
 
@@ -18,6 +19,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
+    
     repeat = True
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
@@ -50,6 +52,7 @@ def get_filters():
 #get_filters()
 
 def load_data(city, month, day):
+
     """
     Loads data for the specified city and filters by month and day if applicable.
 
@@ -76,6 +79,7 @@ def load_data(city, month, day):
 
     return df
     
+    
 def display_data(df):
     view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n').lower()
     start_loc = 0
@@ -84,7 +88,9 @@ def display_data(df):
         start_loc += 5
         view_data = input("Do you wish to continue?: ").lower()
 
+
 def time_stats(df):
+
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -105,7 +111,9 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+
 def station_stats(df):
+
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
@@ -137,6 +145,7 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
+
     """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
@@ -158,6 +167,7 @@ def trip_duration_stats(df):
 
 
 def user_stats(df):
+
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
