@@ -10,6 +10,13 @@ Bike Share Data
 Computing a variety of statistics about bicycle sharing in various cities.
 The cities are Chicago, New York City and Washington.
 
+Computed Statistics:
+
+Popular times of travel
+Popular stations and trip
+Trip duration
+User info
+
 ### Files used
 
 bikeshare.py
